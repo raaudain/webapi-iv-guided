@@ -9,9 +9,12 @@ server.use(helmet());
 server.use(express.json());
 
 server.get('/', (req, res) => {
+
+  const message = process.env.MSG || "Hello Ramon!!!";
+  
   Shoutouts.find()
   .then(shoutouts => {
-    res.status(200).json({message: "Hello Ramon", shoutouts});
+    res.status(200).json({message: message, shoutouts});
   })
   .catch (error => {
     console.error('\nERROR', error);
