@@ -1,6 +1,7 @@
 const server = require('./api/server.js');
 
 // Dynamic port
+// reading an environment variable
 const port = process.env.PORT || 4000;
 
 server.listen(port, () => {
