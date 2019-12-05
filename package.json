@@ -4,7 +4,8 @@
   "description": "Guided project for **Web API IV** module.",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "helmet": "^3.21.2",
+    "heroku": "^7.35.0",
     "knex": "^0.20.1",
     "sqlite3": "^4.1.0"
   },
